@@ -36,7 +36,7 @@ export const defaultTheme = {
     "button-m": ".75rem"
   },
   fonts: {
-    "base": "Roboto",
-    "title": "Baloo 2"
+    "base": "'Roboto'",
+    "title": "'Baloo 2'",
   }
 }
