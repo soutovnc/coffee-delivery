@@ -20,5 +20,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${(props) => props.theme.fonts.base};
     font-weight: 400;
     font-size: ${(props) => props.theme.textSizes['text-m']};
+    -webkit-font-smoothing: antialiased;
   }
 `;
