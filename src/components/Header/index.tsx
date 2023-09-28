@@ -6,7 +6,7 @@ import { ButtonsContainer, CartButton, HeaderContainer, LocaleButton } from "./s
 export function Header() {
   return (
     <HeaderContainer>
-      <div>
+      <div className='container'>
         <img src={logo} alt="" />
 
         <ButtonsContainer>
