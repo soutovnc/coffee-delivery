@@ -6,19 +6,21 @@ import { ButtonsContainer, CartButton, HeaderContainer, LocaleButton } from "./s
 export function Header() {
   return (
     <HeaderContainer>
-      <img src={logo} alt="" />
+      <div>
+        <img src={logo} alt="" />
 
-      <ButtonsContainer>
-        <LocaleButton>
-          <MapPin size={20} weight="fill" />
-          Florianópolis, SC
-        </LocaleButton>
+        <ButtonsContainer>
+          <LocaleButton>
+            <MapPin size={20} weight="fill" />
+            Florianópolis, SC
+          </LocaleButton>
 
-        <CartButton>
-          <span>3</span>
-          <ShoppingCart size={20} weight="fill" />
-        </CartButton>
-      </ButtonsContainer>
+          <CartButton>
+            <span>3</span>
+            <ShoppingCart size={20} weight="fill" />
+          </CartButton>
+        </ButtonsContainer>
+      </div>
     </HeaderContainer>
   )
 }
