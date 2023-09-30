@@ -1,7 +1,10 @@
+import { Intro } from './components/Intro'
+import { Container } from './styles'
+
 export function Home() {
   return (
-    <div>
-      hi, xoblinhas here!
-    </div>
+    <Container>
+      <Intro />
+    </Container>
   )
 }
