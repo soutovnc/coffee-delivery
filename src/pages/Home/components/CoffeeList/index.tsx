@@ -1,5 +1,5 @@
 import { CoffeeCard } from "../CoffeeCard";
-import { CoffeeListContainer, Subtitle } from "./styles";
+import { CoffeeListContainer, ListContainer, Subtitle } from "./styles";
 
 export function CoffeeList() {
   return (
@@ -8,7 +8,17 @@ export function CoffeeList() {
         Nossos cafés
       </Subtitle>
 
-      <CoffeeCard />
+      <ListContainer>
+
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+      </ListContainer>
     </CoffeeListContainer>
   )
 }
