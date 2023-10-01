@@ -8,7 +8,7 @@ interface QuantityInputProps {
   onIncrease: () => void;
 }
 
-export function QuantityInput({ onDecrease, onIncrease, quantity, size = "medium" }: QuantityInputProps) {
+export function QuantityInput({ onDecrease, onIncrease, quantity, size = "small" }: QuantityInputProps) {
   return (
     <QuantityInputContainer size={size}>
       <IconWrapper onClick={onDecrease} disabled={quantity <= 0} >

@@ -5,7 +5,7 @@ export interface QuantityInputContainerProps {
 }
 
 export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
-  flex: 1%;
+  flex: 1;
   background: ${(props) => props.theme.colors["base-button"]};
   display: flex;
   align-items: center;
@@ -20,7 +20,6 @@ export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
     background: none;
     border: none;
     color: ${(props) => props.theme.colors["base-title"]};
-    font-size: ${(props) => props.theme.textSizes["text-m"]};
 
     &:focus {
       outline: none;

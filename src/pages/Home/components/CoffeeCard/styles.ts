@@ -20,6 +20,7 @@ export const CoffeeCardContainer = styled.div`
 
 export const Tag = styled.div`
   width: 100%;
+  max-width: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,23 +29,29 @@ export const Tag = styled.div`
   margin-bottom: 1.25rem;
   flex-wrap: wrap;
 
-  background: ${(props) => props.theme.colors["yellow-light"]};
-  color: ${(props) => props.theme.colors["yellow-dark"]};
-  font-size: ${(props) => props.theme.textSizes["tag"]};
-  text-transform: uppercase;
-  padding: 0.25rem 0.5rem;
-  border-radius: 999px;
-  font-weight: 700;
+  span {
+    background: ${(props) => props.theme.colors["yellow-light"]};
+    color: ${(props) => props.theme.colors["yellow-dark"]};
+    font-size: ${(props) => props.theme.textSizes["tag"]};
+    text-transform: uppercase;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-weight: 700;
+  }
 `;
 
 export const Name = styled.p`
   font-size: ${(props) => props.theme.textSizes["text-s"]};
+  font-family: ${(props) => props.theme.fonts["title"]};
   color: ${(props) => props.theme.colors["base-subtitle"]};
   font-weight: 700;
   margin-bottom: 0.5rem;
 `;
 
-export const Value = styled.p``;
+export const Value = styled.p`
+  font-family: ${(props) => props.theme.fonts["title"]};
+  font-size: ${(props) => props.theme.textSizes["title-m"]};
+`;
 
 export const Description = styled.p`
   font-size: ${(props) => props.theme.textSizes["text-s"]};
