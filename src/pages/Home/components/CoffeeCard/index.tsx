@@ -3,8 +3,19 @@ import { CartWrapper, CoffeeCardContainer, Description, Name, PriceSection, Tag,
 
 import expressoImg from "../../../../assets/images/expresso.png";
 import { QuantityInput } from "../../../../components/QuantityInput";
+import { useState } from "react";
 
 export function CoffeeCard() {
+  const [quantity, setQuantity] = useState(0);
+
+  function handleIncrease() {
+    setQuantity((state) => state + 1)
+  }
+
+  function handleDecrease() {
+    setQuantity((state) => state - 1)
+  }
+
   return (
     <CoffeeCardContainer>
       <img src={expressoImg} />
@@ -19,7 +30,7 @@ export function CoffeeCard() {
         </div>
 
         <CartWrapper>
-          <QuantityInput />
+          <QuantityInput onDecrease={handleDecrease} onIncrease={handleIncrease} quantity={quantity} />
           <button>
             <ShoppingCart weight="fill" size={22} />
           </button>
