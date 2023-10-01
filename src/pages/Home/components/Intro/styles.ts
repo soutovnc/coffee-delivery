@@ -27,15 +27,24 @@ export const IntroContent = styled.div`
 
 export const IntroTitle = styled.h1`
   margin-bottom: 1rem;
+  font-size: ${(props) => props.theme.textSizes["title-xl"]};
   color: ${(props) => props.theme.colors["base-title"]};
-  font-size: ${(props) => props.theme.textSizes["title-m"]};
   line-height: 130%;
   font-weight: 800;
+  font-family: ${(props) => props.theme.fonts["title"]};
 `;
 
 export const IntroText = styled.p`
   color: ${(props) => props.theme.colors["base-text"]};
-  font-size: ${(props) => props.theme.textSizes["text-m"]};
+  font-size: ${(props) => props.theme.textSizes["text-l"]};
   line-height: 130%;
   font-weight: 400;
+`;
+
+export const ItensContainer = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.25rem;
+  margin-top: 4.125rem;
 `;
