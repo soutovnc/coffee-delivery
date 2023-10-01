@@ -2,6 +2,7 @@ import { ShoppingCart } from "phosphor-react";
 import { CartWrapper, CoffeeCardContainer, Description, Name, PriceSection, Tag, Value } from "./styles";
 
 import expressoImg from "../../../../assets/images/expresso.png";
+import { QuantityInput } from "../../../../components/QuantityInput";
 
 export function CoffeeCard() {
   return (
@@ -18,6 +19,7 @@ export function CoffeeCard() {
         </div>
 
         <CartWrapper>
+          <QuantityInput />
           <button>
             <ShoppingCart weight="fill" size={22} />
           </button>
