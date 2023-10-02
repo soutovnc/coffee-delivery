@@ -16,11 +16,11 @@ export const CoffeeCardContainer = styled.div`
     height: 7.5rem;
     margin-top: -1.25rem;
   }
+
 `;
 
 export const Tag = styled.div`
   width: 100%;
-  max-width: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;

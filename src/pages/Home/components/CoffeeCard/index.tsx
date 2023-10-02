@@ -20,6 +20,10 @@ interface CoffeeProps {
 export function CoffeeCard({ coffee }: CoffeeProps) {
   const [quantity, setQuantity] = useState(0);
 
+  const formattedPrice = coffee.price.toLocaleString('pt-BR', {
+    minimumFractionDigits: 2,
+  })
+
   function handleIncrease() {
     setQuantity((state) => state + 1)
   }
@@ -31,18 +35,21 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
   return (
     <CoffeeCardContainer>
       <img src={`/assets/coffees/${coffee.photo}`} />
-      <Tag>
-        {coffee.tag.map((tag) => (
-          <span key={`${coffee.id}${tag}`}>{tag}</span>
-        ))}
-      </Tag>
+      <section>
+        <Tag>
+          {coffee.tag.map((tag) => (
+            <span key={`${coffee.id}${tag}`}>{tag}</span>
+          ))}
+        </Tag>
+
+      </section>
       <Name>{coffee.name}</Name>
       <Description>{coffee.description}</Description>
 
       <PriceSection>
         <div>
           <p>R$</p>
-          <Value>{coffee.price}</Value>
+          <Value>{formattedPrice}</Value>
         </div>
 
         <CartWrapper>
