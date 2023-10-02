@@ -3,6 +3,7 @@ import { CartWrapper, CoffeeCardContainer, Description, Name, PriceSection, Tag,
 
 import { QuantityInput } from "../../../../components/QuantityInput";
 import { useState } from "react";
+import { useCart } from "../../../../hooks/useCart";
 
 export interface Coffee {
   id: number;
@@ -19,6 +20,7 @@ interface CoffeeProps {
 
 export function CoffeeCard({ coffee }: CoffeeProps) {
   const [quantity, setQuantity] = useState(0);
+  const { addCoffeeToCart } = useCart();
 
   const formattedPrice = coffee.price.toLocaleString('pt-BR', {
     minimumFractionDigits: 2,
@@ -30,6 +32,14 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
 
   function handleDecrease() {
     setQuantity((state) => state - 1)
+  }
+
+  function handleAddToCart() {
+    const coffeeToAdd = {
+      ...coffee,
+      quantity,
+    };
+    addCoffeeToCart(coffeeToAdd);
   }
 
   return (
@@ -58,7 +68,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
             onIncrease={handleIncrease}
             quantity={quantity}
           />
-          <button>
+          <button onClick={handleAddToCart} >
             <ShoppingCart weight="fill" size={22} />
           </button>
         </CartWrapper>
