@@ -3,6 +3,7 @@ import { SectionTitle } from "../SectionTitle";
 import { PaymentMethodOptions } from "./PaymentMethodOption";
 import { AddressFormContainer, CompleteOrderContainer, PaymentFormContainer, Title } from "./styles";
 import { useTheme } from "styled-components";
+import { AddressForm } from "./AddressForm";
 
 export function CompleteOrder() {
   const { colors } = useTheme();
@@ -19,6 +20,8 @@ export function CompleteOrder() {
           subtitle="Informe o endereço onde deseja receber seu pedido"
           icon={<MapPinLine color={colors["yellow-dark"]} size={22} />}
         />
+
+        <AddressForm />
       </AddressFormContainer>
       <PaymentFormContainer>
         <SectionTitle
