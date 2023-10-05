@@ -1,3 +1,5 @@
+import { AddressFormContainer, AddressSectionTitle, CompleteOrderContainer, PaymentFormContainer, PaymentSectionTitle, Title } from "./styles";
+
 export function CompleteOrder() {
   return (
     <CompleteOrderContainer>
@@ -10,6 +12,7 @@ export function CompleteOrder() {
       </AddressFormContainer>
       <PaymentFormContainer>
         <PaymentSectionTitle />
+        <PaymentMethodOptions />
       </PaymentFormContainer>
     </CompleteOrderContainer>
   )
