@@ -1,3 +1,4 @@
+import { PaymentMethodOptions } from "./PaymentMethodOption";
 import { AddressFormContainer, AddressSectionTitle, CompleteOrderContainer, PaymentFormContainer, PaymentSectionTitle, Title } from "./styles";
 
 export function CompleteOrder() {
