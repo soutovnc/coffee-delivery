@@ -1,7 +1,7 @@
 import { CurrencyDollar, MapPinLine } from "phosphor-react";
 import { SectionTitle } from "../SectionTitle";
 import { PaymentMethodOptions } from "./PaymentMethodOption";
-import { AddressFormContainer, CompleteOrderContainer, PaymentFormContainer, Title } from "./styles";
+import { CompleteOrderContainer, DeliveryAddressFormContainer, PaymentFormContainer, Title } from "./styles";
 import { useTheme } from "styled-components";
 import { AddressForm } from "./AddressForm";
 
@@ -14,7 +14,7 @@ export function CompleteOrder() {
         Complete seu Pedido
       </Title>
 
-      <AddressFormContainer>
+      <DeliveryAddressFormContainer>
         <SectionTitle
           title="Endereço de Entrega"
           subtitle="Informe o endereço onde deseja receber seu pedido"
@@ -22,7 +22,7 @@ export function CompleteOrder() {
         />
 
         <AddressForm />
-      </AddressFormContainer>
+      </DeliveryAddressFormContainer>
       <PaymentFormContainer>
         <SectionTitle
           title="Pagamento"
