@@ -1,5 +1,7 @@
 import { Bank, CreditCard, Money } from "phosphor-react";
 import { useFormContext } from "react-hook-form";
+import { PaymentMethodInput } from "../PaymentMethodInput";
+import { PaymentMethodOptionsContainer, PaymentText } from "./styles";
 
 export const paymentMethods = {
   credit: {
@@ -27,7 +29,18 @@ export function PaymentMethodOptions() {
 
   return (
     <PaymentMethodOptionsContainer>
-      {}
+      {Object.entries(paymentMethods).map(([key, { label, icon }]) => (
+        <PaymentMethodInput
+          key={label}
+          id={key}
+          icon={icon}
+          label={label}
+          value={key}
+          {...register("paymentMethod")}
+        />
+      ))}
+
+      {paymentMethodError && <PaymentText>{paymentMethodError}</PaymentText>}
     </PaymentMethodOptionsContainer>
   )
 }
