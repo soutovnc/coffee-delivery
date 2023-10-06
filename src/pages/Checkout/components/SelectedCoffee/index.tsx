@@ -1,5 +1,6 @@
 import { useCart } from "../../../../hooks/useCart"
 import { CoffeeCart } from "../CoffeeCart";
+import { ConfirmationSection } from "./ConfirmationSection";
 import { CoffeeCartCardContainer, SelectedCoffeeContainer, TitleText } from "./styles";
 
 export function SelectedCoffee() {
@@ -17,7 +18,7 @@ export function SelectedCoffee() {
         ))}
       </CoffeeCartCardContainer>
 
-
+      <ConfirmationSection />
     </SelectedCoffeeContainer>
   )
 }
