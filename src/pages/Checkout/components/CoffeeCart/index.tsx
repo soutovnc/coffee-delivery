@@ -3,6 +3,7 @@ import { QuantityInput } from "../../../../components/QuantityInput";
 import { CartItem } from "../../../../contexts/CartContext";
 import { useCart } from "../../../../hooks/useCart";
 import { ActionContainer, CoffeeCartContainer, NameText, RemoveButton } from "./styles";
+import { formatMoney } from "../../../../utils/formatMoney";
 
 interface CoffeeCartProps {
   coffee: CartItem;
