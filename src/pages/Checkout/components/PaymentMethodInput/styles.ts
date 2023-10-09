@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const PaymentMethodContainer = styled.div`
+
   input {
     visibility: hidden;
     appearance: none;
@@ -19,7 +20,7 @@ export const PaymentMethodContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  padding: 0 1rem;
+  padding: 1rem;
   background: ${(props) => props.theme.colors["base-button"]};
   color: ${(props) => props.theme.colors["base-text"]};
   display: flex;

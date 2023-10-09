@@ -5,7 +5,9 @@ export const CompleteOrderContainer = styled.div`
   flex-direction: column;
   gap: .75rem;
   width: 40rem;
+  /* background: ${(props) => props.theme.colors["base-card"]}; */
 `;
+
 export const Title = styled.h1`
   color: ${(props) => props.theme.colors["base-title"]};
   font-size: ${(props) => props.theme.textSizes["text-m"]};
@@ -18,13 +20,21 @@ export const DeliveryAddressFormContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 2rem;
+  border-radius: 4px;
+  background: ${(props) => props.theme.colors["base-card"]};
 `;
 
 export const PaymentFormContainer = styled.div`
+  margin-top: .75rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 2rem;
+  background: ${(props) => props.theme.colors["base-card"]};
+  border-radius: 4px;
 `;
+
 
 export const PaymentMethodOptionsContainer = styled.div`
   display: grid;

@@ -11,14 +11,16 @@ export function SelectedCoffee() {
       <TitleText>
         Cafés selecionados
       </TitleText>
+      <div>
 
-      <CoffeeCartCardContainer>
-        {cartItems.map((item) => (
-          <CoffeeCart key={item.id} coffee={item}/>
-        ))}
-      </CoffeeCartCardContainer>
+        <CoffeeCartCardContainer>
+          {cartItems.map((item) => (
+            <CoffeeCart key={item.id} coffee={item}/>
+          ))}
+          <ConfirmationSection />
+        </CoffeeCartCardContainer>
 
-      <ConfirmationSection />
+      </div>
     </SelectedCoffeeContainer>
   )
 }
