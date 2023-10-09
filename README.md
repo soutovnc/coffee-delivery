@@ -1,27 +1,69 @@
-# React + TypeScript + Vite
+<h1 align="center">
+  <img alt="Challenge Logo" title="Coffee Delivery" src="./src/assets/logo.svg" />
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br />
 
-Currently, two official plugins are available:
+<h3 align="center">
+  🎯 About Challenge 
+</h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this challenge, I developed an application to manage a shopping cart for a fictional coffee shop, which contains the following features:
 
-## Expanding the ESLint configuration
+- [x] List of products available for purchase
+- [x] Add a specific number of items to the cart
+- [x] Increase or decrease the number of items in the cart
+- [x] Form for the user to fill in their address
+- [x] Display total items in cart in Header
+- [x] Display the total value of the sum of items in the cart multiplied by the value
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I need to apply concepts like:
 
-- Configure the top-level `parserOptions` property like this:
+- State
+- ContextAPI
+- LocalStorage
+- Imutability
+- Lists and Kays in ReactJS
+- Properties
+- Componentization
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+<h3 align="center">
+  💻 Technologies & Layout
+</h3>
+
+- [React](https://reactjs.org)
+- [React-hook-form](https://react-hook-form.com/get-started)
+- [React-router-dom](https://reactrouter.com/en/main)
+- [Context API](https://pt-br.reactjs.org/docs/context.html)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [zod](https://zod.dev/)
+- [Phosphor-react](https://phosphoricons.com/)
+- [polished](https://github.com/styled-components/polished)
+- [vite](https://vitejs.dev/)
+
+And that was the result achieved
+
+<p align="center">
+  <img alt="Checkout page" src="./public/home.png" width="100%">
+  <img alt="Home page" src="./public/checkout.png" width="100%">
+</p>
+
+<br />
+
+
+## :gear: | If you want testing
+
+```bash
+  ### install the dependencies
+  $ npm i
+  
+  ### running aplication
+  $ npm run dev
+  
+  ### you can see on port http://localhost:5173
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+I'm back with my carrer with this challenge, so I'll see you later, bye 👋🏻
+
+Developed with ❤️ by [Vinicius de Souto](https://github.com/soutovnc)
